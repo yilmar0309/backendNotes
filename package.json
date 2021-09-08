@@ -1,0 +1,52 @@
+{
+    "name": "backendnotas",
+    "version": "1.0.0",
+    "description": "API NOTES",
+    "main": "dist/buildDialer.bundle.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "run-p dev change-detection",
+        "build": "webpack --mode production --optimize-minimize --env.SRV_TARGET=enviroments/enviroment.prod",
+        "dev-start": "webpack --mode development --env.SRV_TARGET=",
+        "dev": "webpack --watch --mode development --env.SRV_TARGET=",
+        "change-detection": "nodemon --watch dist/"
+    },
+    "author": "alexis noriega",
+    "license": "ISC",
+    "dependencies": {
+        "await-to-js": "^3.0.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-useragent": "^1.0.15",
+        "jsonwebtoken": "^8.5.1",
+        "pg": "^8.7.1",
+        "pg-hstore": "^2.3.4",
+        "ramda": "^0.27.1",
+        "reflect-metadata": "^0.1.13",
+        "sequelize": "^6.6.5",
+        "sequelize-typescript": "^2.1.0",
+        "strong-error-handler": "^4.0.0",
+        "typescript-ioc": "^3.2.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/express-useragent": "^1.0.1",
+        "@types/jsonwebtoken": "^8.5.5",
+        "@types/node": "^16.7.13",
+        "@types/pg": "^8.6.1",
+        "@types/validator": "^13.6.3",
+        "@typescript-eslint/eslint-plugin": "^4.31.0",
+        "@typescript-eslint/parser": "^4.31.0",
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.12",
+        "npm-run-all": "^4.1.5",
+        "ts-loader": "^7.0.2",
+        "tslint": "^6.1.3",
+        "typescript": "^4.4.2",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.11"
+    }
+}
